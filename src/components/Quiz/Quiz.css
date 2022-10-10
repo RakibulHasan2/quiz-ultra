@@ -25,3 +25,6 @@
     border: none;
     border-radius: 6px;
 }
+.quiz-info button:hover{
+    background-color: rgb(27, 26, 25)
+}

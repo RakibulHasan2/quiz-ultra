@@ -2,6 +2,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Main from './components/Main/Main';
 import Quizzes from './components/Quizzes/Quizzes';
+import Result from './components/Result/Result';
+import StartQuiz from './components/StartQuiz/StartQuiz';
 
 function App() {
   const router = createBrowserRouter([
@@ -15,8 +17,16 @@ function App() {
           element: <Quizzes></Quizzes>
         },
         {
+          path:'/:id',
+          loader: async ({params}) =>{
+            // console.log(params.id)
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          },
+          element: <StartQuiz></StartQuiz>
+        },
+        {
           path:'result',
-          element: <h1>Result</h1>
+          element: <Result></Result>
         },
         {
           path:'blog',

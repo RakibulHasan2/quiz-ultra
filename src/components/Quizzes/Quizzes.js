@@ -5,10 +5,10 @@ import Quiz from './../Quiz/Quiz';
 const Quizzes = () => {
     const ObjectQuizzes = useLoaderData();
     const quizzes = ObjectQuizzes.data;
-    console.log(quizzes)
+    // console.log(quizzes)
     return (
         <div>
-            <h1>quizzes {quizzes.length}</h1>
+            <h1 className='quiz-heading'>We have made a fun and informative quiz and game for students. <br /> Hope You will enjoy this !!</h1>
             <div  className='all-quiz'>
             {
                 quizzes.map(quiz => <Quiz

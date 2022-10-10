@@ -3,3 +3,6 @@
     grid-template-columns: repeat(4,1fr);
     margin-left: 50px;
 }
+.quiz-heading{
+    color: rgb(89, 92, 92);
+}
