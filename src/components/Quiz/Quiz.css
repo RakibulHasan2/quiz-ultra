@@ -1,0 +1,27 @@
+.quiz-body img{
+    width: 200px;
+    height: 200px;
+}
+.quiz-body{
+    margin-top: 40px;
+    width: 250px;
+    height: 270px;
+    background-color: rgb(94, 141, 141);
+    box-shadow: 10px 10px 10px rgb(168, 225, 193);
+}
+.quiz-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+}
+.quiz-info button{
+    height: 30px;
+    width: 120px;
+    background-color: rgb(39, 60, 106);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}

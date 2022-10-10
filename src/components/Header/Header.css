@@ -1,6 +1,6 @@
 .header{
     height: 80px;
-    background-color: #1c1c1c;
+    background-color: #289fa8;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,5 +17,5 @@
     margin-left: 36px;
 }
 .header a:hover{
-    color: orange;
+    color: rgba(6, 25, 72, 0.456);
 }
