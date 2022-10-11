@@ -3,7 +3,7 @@ import './Option.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Option = ({option,id,correctAnswer}) => {
-    const seeResult = () => toast(correctAnswer,{
+    const seeResult = () => toast(result,{
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -13,7 +13,14 @@ const Option = ({option,id,correctAnswer}) => {
         progress: undefined,
         theme: "light",
         });
-      
+      const result = () =>{
+        if(correctAnswer === option){
+            return 'Correct Answer, Cool'
+        }
+        else{
+            return "Incorrect Answer !!"
+        }
+      }
     // console.log(correctAnswer)
         
     return (
