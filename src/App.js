@@ -3,8 +3,8 @@ import './App.css';
 import Blog from './components/Blog/Blog';
 import Main from './components/Main/Main';
 import Quizzes from './components/Quizzes/Quizzes';
-import Result from './components/Result/Result';
 import StartQuiz from './components/StartQuiz/StartQuiz';
+import Statistics from './components/Statistics/Statistics';
 
 function App() {
   const router = createBrowserRouter([
@@ -26,14 +26,19 @@ function App() {
           element: <StartQuiz></StartQuiz>
         },
         {
-          path:'result',
-          element: <Result></Result>
+          path:'statistics',
+         loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+          element: <Statistics></Statistics>
         },
         {
           path:'blog',
           element: <Blog></Blog>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <h1>The Page is not Found 404</h1>
     }
   ])
   return (

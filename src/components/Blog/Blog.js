@@ -6,16 +6,18 @@ const Blog = () => {
                 <h1 className= 'text-center mt-6 text-3xl font-bold'>FAQ Section</h1>
             <div>
                 <div className='QA'>
-                    <h3 className='font-bold text-lg'>Question-01 : How dose react work?</h3>
-                    <h4> React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or props. It's possible to have as many components as necessary without cluttering your code.React is a declarative, efficient, and flexible JavaScript library for building user interfaces. </h4>
+                    <h3 className='font-bold text-lg'>Question-01 : What is the purpose of React Router?</h3>
+                    <h4>React Router is a state container for the current location , or URL. It keeps track of the location and renders different Route s as it changes, and it also gives you tools to update the location using Link s and the history API.
+                    We simply couple a component with a specific route, which makes our root component (normally called App) clear, maintainable and readable. Without router, either the root component or state would be messy and hard to maintain </h4>
                 </div>
                 <div className='QA'>
-                    <h3 className='font-bold text-lg'>Question-02 : What is the difference between props and state?</h3>
-                    <h4>Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components. The this. setState property is used to update the state values in the component. </h4>
+                    <h3 className='font-bold text-lg'>Question-02 : How does Context API works?</h3>
+                    <h4>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux. </h4>
                 </div>
                 <div className='QA'>
-                    <h3 className='font-bold text-lg'>Question-03 : What are the use of useEFfect execpt load data form API?</h3>
-                    <h4>We can use the useEffect hook to trigger an animation on a shopping cart as a side effect of adding a new product to it. In this case, we'll need a state to handle the cart items, and another state to handle the animation trigger. </h4>
+                    <h3 className='font-bold text-lg'>Question-03 : What is useRef?</h3>
+                    <h4>Refs in React are used to store a reference to a React element and their values are persisted across re-render. Refs are mutable objects, hence they can be updated explicitly and can hold values other than a reference to a React element.
+                    The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly. </h4>
                  </div>   
             </div>
 

@@ -5,9 +5,8 @@ const Option = ({option,id}) => {
     return (
         <div>
         <p>
-            <label>
-            <input type="radio"/><span className='pl-2'>{option}</span>
-            </label>
+            <input className='form-check-input' name='quiz' id='radioQuiz' type="radio"/>
+            <label className='form-check-label' for="radioQuiz"><span className='pl-2'>{option}</span></label>
         </p>
         </div>
     );
