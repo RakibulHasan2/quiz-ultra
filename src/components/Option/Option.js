@@ -1,10 +1,14 @@
 import React from 'react';
 import './Option.css'
-const Option = ({option}) => {
-    console.log(option)
+const Option = ({option,id}) => {
+    // console.log(id)
     return (
         <div>
-        <h1>option : {option}</h1>
+        <p>
+            <label>
+            <input type="radio"/><span className='pl-2'>{option}</span>
+            </label>
+        </p>
         </div>
     );
 };
