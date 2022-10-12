@@ -1,6 +1,6 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
+import './Statistics.css'
 const Statistics = () => {
     const states = [
         {id:1,name:"React",total:8},
@@ -10,7 +10,7 @@ const Statistics = () => {
     ]
     // console.log(states)
     return (
-        <div >
+        <div className='states-body' >
             <p className='text-2xl font-bold mt-5 mb-5'>This is The States of Total Question OF the Quiz</p>
             <div className='flex justify-center'>
             <LineChart width={450} height={300} data={states}>
