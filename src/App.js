@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import About from './components/About/About';
 import Blog from './components/Blog/Blog';
 import Main from './components/Main/Main';
 import Quizzes from './components/Quizzes/Quizzes';
@@ -11,6 +12,7 @@ function App() {
     { 
       path: '/', 
       element: <Main></Main>,
+      errorElement: <About></About>,
       children:[
         {
           path:'/', 
@@ -34,10 +36,6 @@ function App() {
           element: <Blog></Blog>
         }
       ]
-    },
-    {
-      path: '*',
-      element: <h1>The Page is not Found 404</h1>
     }
   ])
   return (

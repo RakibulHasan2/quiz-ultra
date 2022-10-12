@@ -17,3 +17,6 @@
 .button:hover{
     background-color: rgb(27, 26, 25)
 }
+.hoverEffect:hover{
+  background-color: rgb(124, 140, 135);
+}

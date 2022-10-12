@@ -5,7 +5,7 @@ const Quiz = ({quiz}) => {
     const {name, logo ,id} = quiz;
    
     return (
-        <div className='border w-64 h-72 quiz-body ml-7'>
+        <div className='border w-64 h-72 quiz-body ml-7 hoverEffect'>
             <img className='w-4/5 ml-7' src={logo} alt="" />
             <div className='md:flex justify-evenly md:mt-7 mt-3 mb-7'>
                 <p className='font-bold text-white mb-2'>{name}</p>
